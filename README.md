@@ -38,14 +38,14 @@ psql -d $DATABASE_LOCAL -f $DATABASE_FILE
 
 ```sh
 dropdb $DATABASE_LOCAL
-heroku pg:pull DATABASE_URL $DATABASE_LOCAL
+heroku pg:pull DATABASE_URL $DATABASE_LOCAL --app $APP
 ```
 
 ## Pushing
 
 ```sh
-keroku pg:reset --confirm $APP
-heroku pg:push $DATABASE_LOCAL DATABASE_URL
+heroku pg:reset --confirm $APP --app $APP
+heroku pg:push $DATABASE_LOCAL DATABASE_URL --app $APP
 ```
 
 # Starting from Scratch
