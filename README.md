@@ -24,7 +24,7 @@ Set environmental variables.
 export APP="cs467-map-server"
 export DATABASE_FILE=database.sql
 export DATABASE_LOCAL=map
-export DATABASE_URL=postgres://$(whoami)@localhost/map
+export DATABASE_URL=postgres://$(whoami)@localhost/$DATABASE_LOCAL
 ```
 Update local database
 
