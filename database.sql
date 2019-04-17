@@ -1,3 +1,5 @@
+-- This deletes all the tables. Once the table structures are stable,
+-- feel free to remove this.
 BEGIN;
 -- https://stackoverflow.com/questions/3327312/how-can-i-drop-all-the-tables-in-a-postgresql-database
 DROP SCHEMA public CASCADE;
@@ -9,7 +11,8 @@ COMMIT;
 
 CREATE Table Country(
 ID serial PRIMARY KEY NOT NULL,
-Name text NOT NULL
+Name text NOT NULL,
+Country_Code text NOT NULL
 );
 
 CREATE Table City(
@@ -189,8 +192,5 @@ Cost_Apt double precision NOT NULL,
 PRIMARY KEY(ID, CityId)
 );
 
-INSERT INTO Country (name) VALUES ('United States');
-INSERT INTO Country (name) VALUES ('Canada');
-INSERT INTO Country (name) VALUES ('Mexico');
-INSERT INTO Country (name) VALUES ('Puerto Rico');
-INSERT INTO Country (name) VALUES ('Costa Rica');
+
+\i data/data.sql;
