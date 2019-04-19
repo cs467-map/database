@@ -21,7 +21,7 @@ Name text NOT NULL,
 Country int NOT NULL REFERENCES Country(ID),
 Lon float NOT NULL,
 Lat float NOT NULL,
-Rank float NOT NULL,
+Rank float,
 PRIMARY KEY (ID, Country)
 );
 
