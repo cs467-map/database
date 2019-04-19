@@ -19,8 +19,9 @@ CREATE Table City(
 ID serial NOT NULL UNIQUE,
 Name text NOT NULL,
 Country int NOT NULL REFERENCES Country(ID),
-Lat int NOT NULL,
-Lng int NOT NULL,
+Lon float NOT NULL,
+Lat float NOT NULL,
+Rank float NOT NULL,
 PRIMARY KEY (ID, Country)
 );
 
