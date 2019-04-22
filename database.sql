@@ -19,9 +19,8 @@ CREATE Table City(
 ID serial NOT NULL UNIQUE,
 Name text NOT NULL,
 Country int NOT NULL REFERENCES Country(ID),
-Lon float NOT NULL,
-Lat float NOT NULL,
-Rank float,
+Lon numeric NOT NULL,
+Lat numeric NOT NULL,
 PRIMARY KEY (ID, Country)
 );
 
@@ -110,7 +109,7 @@ PRIMARY KEY(ID, CityId)
 CREATE Table Beach_Dist(
 ID serial NOT NULL,
 CityId int NOT NULL REFERENCES City(ID),
-Dist int NOT NULL,
+Close Boolean,
 PRIMARY KEY(ID, CityId)
 );
 
