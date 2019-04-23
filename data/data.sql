@@ -8,6 +8,9 @@
 -- Coastlines
 \copy Coastlines(CityId, NearCoast) FROM 'data/coastlines.csv' DELIMITER ',' CSV;
 
+-- Airports
+\copy Airports(id, Cityid, Exists) FROM 'data/airport.csv' DELIMITER ',' CSV;
+
 -- Population Totals
 -- Build populations for all cities.
 \i data/population/population.sql
@@ -26,6 +29,8 @@
 
 -- Coastlines
 \copy Coastlines(CityId, NearCoast) FROM 'data\coastlines.csv' DELIMITER ',' CSV;
+-- Airports
+\copy Airports(id, Cityid, Exists) FROM 'data\airport.csv' DELIMITER ',' CSV;
 
 -- Population Totals
 -- Build populations for all cities.
