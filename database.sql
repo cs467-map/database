@@ -85,6 +85,13 @@ Dist int NOT NULL,
 PRIMARY KEY(ID, CityId)
 );
 
+CREATE Table Coastlines(
+ID serial NOT NULL,
+CityId int NOT NULL REFERENCES City(ID),
+NearCoast boolean NOT NULL,
+PRIMARY KEY(ID, CityId)
+);
+
 CREATE Table Airport(
 ID serial NOT NULL,
 CityId int NOT NULL REFERENCES City(ID),
@@ -195,4 +202,3 @@ PRIMARY KEY(ID, CityId)
 
 
 \i data/data.sql;
-\i data/population/population.sql

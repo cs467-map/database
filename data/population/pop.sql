@@ -1,4 +1,7 @@
---INSERT INTO Population(CityId, Total)
+-- Insert population averages from the "ne_10m_populated_places" table
+-- into the "Population" table (as "Total")
+
+INSERT INTO Population(CityId, Total)
 SELECT C.id, TRUNC((pop_min + pop_max) / 2.0, 1) AS pop_avg
 FROM ne_10m_populated_places NE
 INNER JOIN City C ON (C.Name = NE.name)
