@@ -170,14 +170,15 @@ PRIMARY KEY(ID, CityId)
 CREATE Table Population(
 ID serial NOT NULL,
 CityId int NOT NULL REFERENCES City(ID),
-M_Child int NOT NULL,
-F_Child int NOT NULL, 
-M_Young_Adult int NOT NULL,
-F_Young_Adult int NOT NULL,
-M_Adult int NOT NULL,
-F_Adult int NOT NULL,
-M_Ederly int NOT NULL,
-F_Ederly int NOT NULL,
+Total int NOT NULL,
+M_Child int,
+F_Child int, 
+M_Young_Adult int,
+F_Young_Adult int,
+M_Adult int,
+F_Adult int,
+M_Ederly int,
+F_Ederly int,
 PRIMARY KEY(ID, CityId)
 );
 
@@ -194,3 +195,4 @@ PRIMARY KEY(ID, CityId)
 
 
 \i data/data.sql;
+\i data/population/population.sql
