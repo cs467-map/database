@@ -1,201 +1,200 @@
-Morocco,MAR
-Russia,RUS
-Trinidad and Tobago,TTO
-Antigua and Barbuda,ATG
-Libya,LBY
-Liberia,LBR
-Greece,GRC
-Western Sahara,SAH
-Cuba,CUB
-Nicaragua,NIC
-Denmark,DNK
-Brunei,BRN
-Cameroon,CMR
-Turkey,TUR
-Sudan,SDN
-Myanmar,MMR
-Suriname,SUR
-Mozambique,MOZ
-Togo,TGO
-Poland,POL
-Azerbaijan,AZE
-Ivory Coast,CIV
-Belize,BLZ
-Israel,IS1
-United States of America,USA
-Vietnam,VNM
-Sierra Leone,SLE
-Lithuania,LTU
-Botswana,BWA
-Algeria,DZA
-Burkina Faso,BFA
-Congo (Brazzaville),COG
-Finland,FIN
-Nepal,NPL
-Luxembourg,LUX
-Sweden,SWE
-Canada,CAN
-Chile,CHL
-Benin,BEN
-Haiti,HTI
-South Sudan,SSD
-Namibia,NAM
-Gabon,GAB
-Germany,DEU
-Peru,PER
-Ukraine,UKR
-Slovakia,SVK
-Andorra,AND
-Iraq,IRQ
-Hungary,HUN
-Bosnia and Herzegovina,BIH
-Uzbekistan,UZB
-Dominica,DMA
-Romania,ROU
-Uruguay,URY
-Zimbabwe,ZWE
-Guinea,GIN
-Montenegro,MNE
-Niger,NER
-Malaysia,MYS
-Switzerland,CHE
-Bolivia,BOL
-Bhutan,BTN
-Vatican (Holy Sea),VAT
-Vanuatu,VUT
-Pakistan,PAK
-"Korea, North",PRK
-Eritrea,ERI
-Swaziland,SWZ
-United Arab Emirates,ARE
-Equatorial Guinea,GNQ
-Republic of Serbia,SRB
-Uganda,UGA
-Guyana,GUY
-Slovenia,SVN
-Moldova,MDA
-Congo (Kinshasa),COD
-United Republic of Tanzania,TZA
-Tonga,TON
-Tunisia,TUN
-Saudi Arabia,SAU
-Singapore,SGP
-Ecuador,ECU
-Bangladesh,BGD
-Saint Kitts and Nevis,KNA
-Iran,IRN
-Ethiopia,ETH
-Macedonia,MKD
-Guatemala,GTM
-South Africa,ZAF
-Chad,TCD
-Tuvalu,TUV
-Panama,PAN
-New Zealand,NZL
-Saint Lucia,LCA
-Federated States of Micronesia,FSM
-Samoa,WSM
-Solomon Islands,SLB
-Burundi,BDI
-Bahrain,BHR
-Estonia,EST
-Indeterminate,ATA
-Ireland,IRL
-Senegal,SEN
-Central African Republic,CAF
-Kingdom of Spain,ESP
-Czech Republic,CZE
-El Salvador,SLV
-Kuwait,KWT
-Kyrgyzstan,KGZ
-Costa Rica,CRI
-Nigeria,NGA
-Mali,MLI
-Zambia,ZMB
-Kingdom of Norway,NOR
-Kiribati,KIR
-Kazakhstan,KAZ
-Laos,LAO
-Guinea Bissau,GNB
-"Bahamas, The",BHS
-Jordan,JOR
-Grenada,GRD
-United States,USA
-Marshall Islands,MHL
-Georgia,GEO
-Egypt,EGY
-Malawi,MWI
-Madagascar,MDG
-East Timor,TLS
-Cape Verde,CPV
-Qatar,QAT
-Argentina,ARG
-San Marino,SMR
-Yemen,YEM
-Monaco,MCO
-"Korea, South",KOR
-Honduras,HND
-Philippines,PHL
-Kosovo,KOS
-Mauritania,MRT
-Cambodia,KHM
-Saint Vincent and the Grenadines,VCT
-China,CHN
-Armenia,ARM
-Syria,SYR
-Dominican Republic,DOM
-Northern Cyprus,CYN
-Austria,AUT
-Australia,AUS
-Rwanda,RWA
-United Kingdom,GBR
-Afghanistan,AFG
-Djibouti,DJI
-Jamaica,JAM
-Maldives,MDV
-Kenya,KEN
-Iceland,ISL
-Albania,ALB
-Portugal,PRT
-Thailand,THA
-Venezuela,VEN
-Seychelles,SYC
-Cyprus,CYP
-Finland,ALD
-Indonesia,IDN
-Mauritius,MUS
-Barbados,BRB
-Palau,PLW
-Lebanon,LBN
-Angola,AGO
-Tajikistan,TJK
-Belarus,BLR
-India,IND
-Paraguay,PRY
-Lesotho,LSO
-French Republic,FRA
-Colombia,COL
-Bulgaria,BGR
-Croatia,HRV
-"Gambia, The",GMB
-Sao Tome and Principe,STP
-Ghana,GHA
-Japan,JPN
-Papua New Guinea,PNG
-Taiwan,TWN
-Sri Lanka,LKA
-Brazil,BRA
-Italy,ITA
-Oman,OMN
-Somaliland,SOL
-Turkmenistan,TKM
-Comoros,COM
-Belgium,BEL
-Fiji,FJI
-Liechtenstein,LIE
-Mexico,MEX
-Malta,MLT
-Mongolia,MNG
-Latvia,LVA
-Kingdom of the Netherlands,NLD
-Somalia,SOM
+1,Indonesia
+2,Bangladesh
+3,Venezuela
+4,Kiribati
+5,Federated States of Micronesia
+6,Cameroon
+7,Luxembourg
+8,Czech Republic
+9,Sweden
+10,Montenegro
+11,Uganda
+12,Jordan
+13,Dominican Republic
+14,Cambodia
+15,Ireland
+16,Macedonia
+17,Singapore
+18,Papua New Guinea
+19,San Marino
+20,Laos
+21,Sri Lanka
+22,Brunei
+23,Uzbekistan
+24,Finland
+25,Portugal
+26,Malta
+27,Colombia
+28,Albania
+29,Grenada
+30,Ukraine
+31,Saudi Arabia
+32,Sao Tome and Principe
+33,Cuba
+34,Latvia
+35,Indeterminate
+36,Kyrgyzstan
+37,Algeria
+38,Kingdom of the Netherlands
+39,Cape Verde
+40,Maldives
+41,Slovakia
+42,Israel
+43,Djibouti
+44,Syria
+45,Ghana
+46,Kenya
+47,Malaysia
+48,Senegal
+49,Zambia
+50,Iceland
+51,Madagascar
+52,Kuwait
+53,Sierra Leone
+54,Bosnia and Herzegovina
+55,Liberia
+56,Philippines
+57,Tuvalu
+58,Benin
+59,United States
+60,Cyprus
+61,Guinea
+62,Turkey
+63,Nigeria
+64,Rwanda
+65,Zimbabwe
+66,Tajikistan
+67,Comoros
+68,China
+69,Saint Lucia
+70,Belarus
+71,Armenia
+72,Congo (Brazzaville)
+73,Qatar
+74,Kingdom of Norway
+75,Lesotho
+76,Paraguay
+77,Gabon
+78,Australia
+79,Dominica
+80,Mauritius
+81,Vatican (Holy Sea)
+82,Angola
+83,Libya
+84,"Gambia, The"
+85,Bahrain
+86,Vanuatu
+87,Congo (Kinshasa)
+88,United Arab Emirates
+89,Georgia
+90,Belgium
+91,Malawi
+92,Monaco
+93,Burundi
+94,Taiwan
+95,Bhutan
+96,Solomon Islands
+97,Thailand
+98,"Korea, South"
+99,Togo
+100,Burkina Faso
+101,El Salvador
+102,Italy
+103,"Bahamas, The"
+104,Uruguay
+105,Oman
+106,Fiji
+107,United Kingdom
+108,French Republic
+109,Palau
+110,Northern Cyprus
+111,Germany
+112,Eritrea
+113,Canada
+114,Barbados
+115,Saint Vincent and the Grenadines
+116,Marshall Islands
+117,Argentina
+118,Republic of Serbia
+119,Namibia
+120,United Republic of Tanzania
+121,Liechtenstein
+122,Slovenia
+123,Azerbaijan
+124,Greece
+125,Egypt
+126,Afghanistan
+127,India
+128,Chad
+129,Iran
+130,Saint Kitts and Nevis
+131,Chile
+132,Estonia
+133,Vietnam
+134,Suriname
+135,South Africa
+136,Peru
+137,Kazakhstan
+138,Central African Republic
+139,Japan
+140,Kosovo
+141,Ivory Coast
+142,Denmark
+143,Jamaica
+144,Trinidad and Tobago
+145,Mongolia
+146,United States of America
+147,Iraq
+148,Mauritania
+149,Mozambique
+150,Seychelles
+151,Switzerland
+152,Ecuador
+153,New Zealand
+154,Guinea Bissau
+155,Hungary
+156,"Korea, North"
+157,Russia
+158,Belize
+159,Honduras
+160,Botswana
+161,Pakistan
+162,Romania
+163,Brazil
+164,Austria
+165,Guatemala
+166,Bolivia
+167,Ethiopia
+168,Niger
+169,Panama
+170,South Sudan
+171,Yemen
+172,Western Sahara
+173,Lithuania
+174,Bulgaria
+175,Turkmenistan
+176,Croatia
+177,Tunisia
+178,East Timor
+179,Sudan
+180,Mali
+181,Morocco
+182,Swaziland
+183,Moldova
+184,Myanmar
+185,Kingdom of Spain
+186,Mexico
+187,Nicaragua
+188,Tonga
+189,Guyana
+190,Nepal
+191,Poland
+192,Lebanon
+193,Costa Rica
+194,Haiti
+195,Samoa
+196,Equatorial Guinea
+197,Antigua and Barbuda
+198,Somaliland
+199,Andorra
+200,Somalia
