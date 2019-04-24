@@ -6,7 +6,10 @@
 \copy City(id, name, country, lat, lon) FROM 'data/city.csv' DELIMITER ',' CSV;
 
 -- Coastlines
-\copy Coastlines(CityId, NearCoast) FROM 'data/coastlines.csv' DELIMITER ',' CSV;
+--\copy Coastlines(CityId, NearCoast) FROM 'data/coastlines.csv' DELIMITER ',' CSV;
+
+-- Airports
+-- \copy Airports(id, Cityid, Exists) FROM 'data/airport.csv' DELIMITER ',' CSV;
 
 -- Population Totals
 -- Build populations for all cities.
@@ -26,6 +29,8 @@
 
 -- Coastlines
 \copy Coastlines(CityId, NearCoast) FROM 'data\coastlines.csv' DELIMITER ',' CSV;
+-- Airports
+\copy Airports(id, Cityid, Exists) FROM 'data\airport.csv' DELIMITER ',' CSV;
 
 -- Population Totals
 -- Build populations for all cities.
