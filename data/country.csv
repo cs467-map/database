@@ -1,3 +1,4 @@
+Country_Code,Name
 1,Indonesia
 2,Bangladesh
 3,Venezuela
@@ -35,7 +36,7 @@
 35,Indeterminate
 36,Kyrgyzstan
 37,Algeria
-38,Kingdom of the Netherlands
+38,Netherlands
 39,Cape Verde
 40,Maldives
 41,Slovakia
@@ -69,9 +70,9 @@
 69,Saint Lucia
 70,Belarus
 71,Armenia
-72,Congo (Brazzaville)
+72,Congo Republic
 73,Qatar
-74,Kingdom of Norway
+74,Norway
 75,Lesotho
 76,Paraguay
 77,Gabon
@@ -81,10 +82,10 @@
 81,Vatican (Holy Sea)
 82,Angola
 83,Libya
-84,"Gambia, The"
+84,Gambia
 85,Bahrain
 86,Vanuatu
-87,Congo (Kinshasa)
+87,DRC
 88,United Arab Emirates
 89,Georgia
 90,Belgium
@@ -95,12 +96,12 @@
 95,Bhutan
 96,Solomon Islands
 97,Thailand
-98,"Korea, South"
+98,South Korea
 99,Togo
 100,Burkina Faso
 101,El Salvador
 102,Italy
-103,"Bahamas, The"
+103,Bahamas
 104,Uruguay
 105,Oman
 106,Fiji
@@ -153,7 +154,7 @@
 153,New Zealand
 154,Guinea Bissau
 155,Hungary
-156,"Korea, North"
+156,North Korea
 157,Russia
 158,Belize
 159,Honduras
@@ -182,7 +183,7 @@
 182,Swaziland
 183,Moldova
 184,Myanmar
-185,Kingdom of Spain
+185,Spain
 186,Mexico
 187,Nicaragua
 188,Tonga

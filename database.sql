@@ -122,9 +122,10 @@ PRIMARY KEY(ID, CityId)
 
 CREATE Table Internet_Speed(
 ID serial NOT NULL,
-CityId int NOT NULL REFERENCES City(ID),
-Speed int NOT NULL,
-PRIMARY KEY(ID, CityId)
+Country int NOT NULL REFERENCES Country(ID),
+-- Speed is in Mbps
+Speed float NOT NULL,
+PRIMARY KEY(ID, Country)
 );
 
 CREATE Table Homicide(
