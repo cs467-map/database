@@ -92,14 +92,14 @@ NearCoast boolean NOT NULL,
 PRIMARY KEY(ID, CityId)
 );
 
-CREATE Table Airport(
+CREATE Table Airports(
 ID serial NOT NULL,
 CityId int NOT NULL REFERENCES City(ID),
 Exists bool NOT NULL,
 PRIMARY KEY(ID, CityId)
 );
 
-CREATE Table Intl_Airport(
+CREATE Table Intl_Airports(
 ID serial NOT NULL,
 CityId int NOT NULL REFERENCES City(ID),
 Exists bool NOT NULL,
