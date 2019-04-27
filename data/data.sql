@@ -11,6 +11,9 @@
 -- Airports
 \copy Airports(Cityid, Exists) FROM 'data/airport.csv' DELIMITER ',' CSV HEADER;
 
+--Elevation
+\copy Elevation(id, elevation) FROM 'data/elevationdata.csv' DELIMITER ',' CSV HEADER;
+
 -- Internet Speed
 CREATE Table temp_internet(
     ID serial NOT NULL,
