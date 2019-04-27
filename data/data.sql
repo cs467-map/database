@@ -14,6 +14,9 @@
 --Elevation
 \copy Elevation(id, elevation) FROM 'data/elevationdata.csv' DELIMITER ',' CSV HEADER;
 
+--Air Pollution
+\copy Air_pollution(id, elevation) FROM 'data/air_pollution.csv' DELIMITER ',' CSV HEADER;
+
 -- Internet Speed
 CREATE Table temp_internet(
     ID serial NOT NULL,
