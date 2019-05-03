@@ -23,6 +23,9 @@
 --Precipitation (mm)
 \copy Precipitation(id, jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec) FROM 'data/precip.csv' DELIMITER ',' CSV HEADER;
 
+--UV (Values 0-255. divide by 16 to get UV index. i.e. Value of 32 means UV index of 2.)
+\copy UV_Index(id, jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec) FROM 'data/uv.csv' DELIMITER ',' CSV HEADER;
+
 -- Internet Speed
 CREATE Table temp_internet(
     ID serial NOT NULL,
