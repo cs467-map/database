@@ -15,7 +15,13 @@
 \copy Elevation(id, elevation) FROM 'data/elevationdata.csv' DELIMITER ',' CSV HEADER;
 
 --Air Pollution
-\copy Air_pollution(id, elevation) FROM 'data/air_pollution.csv' DELIMITER ',' CSV HEADER;
+\copy Air_pollution(id, pollution_idx) FROM 'data/air_pollution.csv' DELIMITER ',' CSV HEADER;
+
+--Temperature (Degrees C * 10)
+\copy Temperature(id, jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec) FROM 'data/temp.csv' DELIMITER ',' CSV HEADER;
+
+--Precipitation (mm)
+\copy Precipitation(id, jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec) FROM 'data/precip.csv' DELIMITER ',' CSV HEADER;
 
 -- Internet Speed
 CREATE Table temp_internet(
