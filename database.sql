@@ -12,7 +12,7 @@ SET CLIENT_ENCODING TO 'UTF8';
 
 CREATE Table Country(
 ID serial PRIMARY KEY NOT NULL,
-Name text NOT NULL,
+Name text NOT NULL
 );
 
 CREATE Table City(
@@ -117,7 +117,7 @@ CREATE Table Internet_Speed(
 ID serial NOT NULL,
 Country int NOT NULL REFERENCES Country(ID),
 -- Speed is in Mbps
-Speed numeric NOT NULL,
+Speed numeric,
 PRIMARY KEY(ID, Country)
 );
 

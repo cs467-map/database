@@ -30,16 +30,5 @@
 \copy Air_pollution(CityId, Index) FROM 'data/air_pollution.csv' DELIMITER ',' CSV HEADER;
 
 -- Internet Speed
-CREATE Table temp_internet(
-    Country text NOT NULL,
-    Speed numeric NOT NULL,
-    PRIMARY KEY(Country)
-);
-
-\copy temp_internet(Country, Speed) FROM 'data/internet-speed.csv' DELIMITER ',' CSV HEADER;
-
-INSERT INTO Internet_Speed(Country, Speed)
-SELECT C.id, TI.Speed FROM Country C
-INNER JOIN temp_internet TI ON (TI.Country = C.name);
-
+\copy Internet_Speed(Country, Speed) FROM 'data/internet_speed.csv' DELIMITER ',' CSV HEADER;
 
