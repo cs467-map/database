@@ -81,7 +81,7 @@ PRIMARY KEY(ID, CityId)
 CREATE Table Coastlines(
 ID serial NOT NULL,
 CityId int NOT NULL REFERENCES City(ID),
-NearCoast boolean NOT NULL,
+NearCoast boolean,
 PRIMARY KEY(ID, CityId)
 );
 
@@ -103,13 +103,6 @@ CREATE Table Elevation(
 ID serial NOT NULL,
 CityId int NOT NULL REFERENCES City(ID),
 elevation int,
-PRIMARY KEY(ID, CityId)
-);
-
-CREATE Table Beach_Dist(
-ID serial NOT NULL,
-CityId int NOT NULL REFERENCES City(ID),
-Close Boolean,
 PRIMARY KEY(ID, CityId)
 );
 
