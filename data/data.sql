@@ -32,3 +32,5 @@
 -- Internet Speed
 \copy Internet_Speed(Country, Speed) FROM 'data/internet_speed.csv' DELIMITER ',' CSV HEADER;
 
+-- Purchasing power
+\copy Puchasing_Power_Parity(Country, ppp) FROM 'data/purchasing_power.csv' DELIMITER ',' CSV HEADER;

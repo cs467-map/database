@@ -187,5 +187,12 @@ Cost_Apt double precision NOT NULL,
 PRIMARY KEY(ID, CityId)
 );
 
+CREATE TABLE Puchasing_Power_Parity(
+ID serial NOT NULL,
+Country int NOT NULL REFERENCES Country(ID),
+ppp numeric
+PRIMARY KEY(ID)
+);
+
 
 \i data/data.sql;
