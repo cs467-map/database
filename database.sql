@@ -149,9 +149,9 @@ PRIMARY KEY(ID, CityId, Biome_Id)
 
 CREATE Table Poverty_Index(
 ID serial NOT NULL,
-CityId int NOT NULL REFERENCES City(ID),
-Index double precision NOT NULL,
-PRIMARY KEY(ID, CityId)
+Country int NOT NULL REFERENCES Country(ID),
+percent double precision NOT NULL,
+PRIMARY KEY(ID, Country)
 );
 
 CREATE Table Air_Pollution(
