@@ -131,7 +131,7 @@ PRIMARY KEY(ID, CityId)
 CREATE Table City_Image(
 ID serial NOT NULL,
 CityId int NOT NULL REFERENCES City(ID),
-URL text NOT NULL,
+Src text NOT NULL,
 PRIMARY KEY(ID, CityId)
 );
 
