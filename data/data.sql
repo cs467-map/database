@@ -34,3 +34,6 @@
 
 -- Purchasing power
 \copy Puchasing_Power_Parity(Country, ppp) FROM 'data/purchasing_power.csv' DELIMITER ',' CSV HEADER;
+
+--Percent of population living in 'Severe poverty'
+\copy Poverty_Index(Country, percent) FROM 'data/severe_poverty_percent.csv' DELIMITER ',' CSV HEADER;
