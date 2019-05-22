@@ -190,9 +190,8 @@ PRIMARY KEY(ID, CityId)
 CREATE TABLE Puchasing_Power_Parity(
 ID serial NOT NULL,
 Country int NOT NULL REFERENCES Country(ID),
-ppp numeric
+ppp numeric,
 PRIMARY KEY(ID)
 );
-
 
 \i data/data.sql;
