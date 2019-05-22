@@ -32,5 +32,8 @@
 -- Internet Speed
 \copy Internet_Speed(Country, Speed) FROM 'data/internet_speed.csv' DELIMITER ',' CSV HEADER;
 
+-- City Images
+\copy City_Image(CityId,Url) FROM 'data/city_images.csv' DELIMITER ',' CSV HEADER;
+
 -- Purchasing power
 \copy Puchasing_Power_Parity(Country, ppp) FROM 'data/purchasing_power.csv' DELIMITER ',' CSV HEADER;
