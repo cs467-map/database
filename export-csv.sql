@@ -34,4 +34,4 @@ INNER JOIN UV_Index uv ON uv.CityId = c.id
 
 ORDER BY p.total DESC;
 
-\copy (SELECT * FROM export) To 'voyager-index.csv' With CSV DELIMITER ',' HEADER;
+\copy (SELECT * FROM export) To 'voyager-index-data.csv' With CSV DELIMITER ',' HEADER;
