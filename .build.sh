@@ -1,6 +1,20 @@
 #!/bin/bash
 set +x
 
+# update database
+
+GIT=voyager-index-database
+
+sudo su git
+cd $HOME/Documents/$GIT
+git pull origin master
+
+psql -d map -f database.sql -f export-csv.sql
+
+exit
+
+# export data
+
 project=voyager-index-data
 production=/var/www/pkgs/$project
 
