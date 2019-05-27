@@ -116,9 +116,10 @@ PRIMARY KEY(ID, Country)
 
 CREATE Table Homicide(
 ID serial NOT NULL,
-CityId int NOT NULL REFERENCES City(ID),
-Rate int NOT NULL,
-PRIMARY KEY(ID, CityId)
+Country int NOT NULL REFERENCES Country(ID),
+TotalRate numeric,
+FemaleRate numeric,
+PRIMARY KEY(ID, Country)
 );
 
 CREATE Table Palm_Trees(

@@ -40,3 +40,9 @@
 
 --Percent of population living in 'Severe poverty'
 \copy Poverty_Index(Country, percent) FROM 'data/severe_poverty_percent.csv' DELIMITER ',' CSV HEADER;
+
+--Palm Trees
+\copy Palm_Trees(CityId, Palms) FROM 'data/palms.csv' DELIMITER ',' CSV HEADER;
+
+--Homicides (Total, female, per 100,000 people)
+\copy Homicide(Country,TotalRate,FemaleRate) FROM 'data/homicide.csv' DELIMITER ',' CSV HEADER;
