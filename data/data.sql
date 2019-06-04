@@ -11,6 +11,9 @@
 -- Airports
 \copy Airports(Cityid, Exists) FROM 'data/airport.csv' DELIMITER ',' CSV HEADER;
 
+-- Intl Airports
+\copy Intl_Airports(Cityid, Exists) FROM 'data/intlairports.csv' DELIMITER ',' CSV HEADER;
+
 --Elevation
 \copy Elevation(CityId, elevation) FROM 'data/elevationdata.csv' DELIMITER ',' CSV HEADER;
 
@@ -44,5 +47,5 @@
 --Palm Trees
 \copy Palm_Trees(CityId, Palms) FROM 'data/palms.csv' DELIMITER ',' CSV HEADER;
 
---Homicides (Total, female, per 100,000 people)
+--Homicides (Total, female, per 100,000 people)\
 \copy Homicide(Country,TotalRate,FemaleRate) FROM 'data/homicide.csv' DELIMITER ',' CSV HEADER;
