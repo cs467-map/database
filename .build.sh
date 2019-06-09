@@ -29,7 +29,7 @@ zip voyager-index-data.json.zip voyager-index-data.json
 zip voyager-index-data.csv.zip voyager-index-data.csv
 
 printf "${COLOR}signing exports${NC}\n"
-touch sha256sums.txt
+> sha256sums.txt
 sha256sum voyager-index-data.* >> sha256sums.txt
 gpg --passphrase "$gpgpass" --batch --yes --detach-sign -a sha256sums.txt
 
