@@ -34,4 +34,10 @@ INNER JOIN UV_Index uv ON uv.CityId = c.id
 
 ORDER BY p.total DESC;
 
+-- CSV export
 \copy (SELECT * FROM export) To 'voyager-index-data.csv' With CSV DELIMITER ',' HEADER;
+
+-- JSON export
+-- https://ethanmick.com/outputting-a-postgres-table-as-json/
+\copy (SELECT array_to_json(array_agg(row_to_json(t))) FROM (SELECT * FROM export) t) TO 'voyager-index-data.json'
+;

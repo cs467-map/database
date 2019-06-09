@@ -8,24 +8,26 @@ files=(
 voyager-index-data 
 sha256sums
 )
+COLOR='\033[1;36m'
+NC='\033[0m' # No Color
+export GPG_TTY=$(tty)
 
 # update database
 
-echo "updating database"
+printf "${COLOR}updating database${NC}"
 cd "$src"
 git pull -Xtheirs origin master
 
-echo "exporting database"
-psql -d map -f database.sql -f export-csv.sql
-psql -d map -f database.sql -f export-json.sql
+printf "${COLOR}expoting database${NC}"
+psql -d map -f database.sql -f export-data.sql
 
 # export data
 
-echo "signing exports"
+printf "${COLOR}signing exports${NC}"
 sha256sum *.csv > sha256sums.txt
 gpg --passphrase "$gpgpass" --batch --yes --detach-sign -a sha256sums.txt
 
-echo "copying exports"
+printf "${COLOR}copying exports${NC}"
 for file in "${files[@]}"
 do
     cp "$file"* "$production"
