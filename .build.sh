@@ -14,20 +14,20 @@ export GPG_TTY=$(tty)
 
 # update database
 
-printf "${COLOR}updating database${NC}"
+printf "${COLOR}updating database${NC}\n"
 cd "$src"
 git pull -Xtheirs origin master
 
-printf "${COLOR}expoting database${NC}"
+printf "${COLOR}exporting database${NC}\n"
 psql -d map -f database.sql -f export-data.sql
 
 # export data
 
-printf "${COLOR}signing exports${NC}"
-sha256sum *.csv > sha256sums.txt
+printf "${COLOR}signing exports${NC}\n"
+sha256sum voyager-index-data.* > sha256sums.txt
 gpg --passphrase "$gpgpass" --batch --yes --detach-sign -a sha256sums.txt
 
-printf "${COLOR}copying exports${NC}"
+printf "${COLOR}copying exports${NC}\n"
 for file in "${files[@]}"
 do
     cp "$file"* "$production"
