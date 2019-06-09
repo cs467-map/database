@@ -24,7 +24,8 @@ psql -d map -f database.sql -f export-data.sql
 # export data
 
 printf "${COLOR}signing exports${NC}\n"
-sha256sum voyager-index-data.* > sha256sums.txt
+touch sha256sums.txt
+sha256sum voyager-index-data.* >> sha256sums.txt
 gpg --passphrase "$gpgpass" --batch --yes --detach-sign -a sha256sums.txt
 
 printf "${COLOR}copying exports${NC}\n"
