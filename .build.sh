@@ -22,6 +22,11 @@ printf "${COLOR}exporting database${NC}\n"
 psql -d map -f database.sql -f export-data.sql
 
 # export data
+printf "${COLOR}compressing exports${NC}\n"
+tar -zcvf voyager-index.data.json.tar.gz voyager-index-data.json
+tar -zcvf voyager-index.data.csv.tar.gz voyager-index-data.csv
+zip voyager-index.data.json.zip voyager-index-data.json
+zip voyager-index.data.csv.zip voyager-index-data.csv
 
 printf "${COLOR}signing exports${NC}\n"
 touch sha256sums.txt
