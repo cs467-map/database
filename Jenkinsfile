@@ -1,7 +1,9 @@
 node {
    stage('Update') {
+      sh "pwd"
       src = '/var/www/voyager-index-database'
       sh "cd ${src}"
+      sh "pwd"
       sh "git pull -Xtheirs origin master"
    }
    stage('Export') {
