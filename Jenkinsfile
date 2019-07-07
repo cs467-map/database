@@ -1,7 +1,5 @@
 node {
    stage('Update') {
-      src = '/var/www/voyager-index-database'
-      sh "cd ${src}"
       git url: 'https://github.com/voyager-index/database/'
    }
    stage('Export') {
