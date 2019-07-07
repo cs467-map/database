@@ -8,11 +8,11 @@ GRANT ALL ON SCHEMA public TO postgres;
 GRANT ALL ON SCHEMA public TO public;
 COMMENT ON SCHEMA public IS 'standard public schema';
 COMMIT;
+SET CLIENT_ENCODING TO 'UTF8';
 
 CREATE Table Country(
 ID serial PRIMARY KEY NOT NULL,
-Name text NOT NULL,
-Country_Code text NOT NULL
+Name text NOT NULL
 );
 
 CREATE Table City(
@@ -27,79 +27,72 @@ PRIMARY KEY (ID, Country)
 CREATE Table Precipitation(
 ID serial NOT NULL,
 CityId int NOT NULL REFERENCES City(ID),
-Jan double precision NOT NULL,
-Feb double precision NOT NULL,
-Mar double precision NOT NULL,
-April double precision NOT NULL,
-May double precision NOT NULL,
-June double precision NOT NULL,
-July double precision NOT NULL,
-Aug double precision NOT NULL,
-Sept double precision NOT NULL,
-Oct double precision NOT NULL,
-Nov double precision NOT NULL,
-Dec double precision NOT NULL,
+Jan int,
+Feb int,
+Mar int,
+April int,
+May int,
+June int,
+July int,
+Aug int,
+Sept int,
+Oct int,
+Nov int,
+Dec int,
 PRIMARY KEY(ID, CityId)
 );
 
 CREATE Table Temp(
 ID serial NOT NULL,
 CityId int NOT NULL REFERENCES City(ID),
-Jan double precision NOT NULL,
-Feb double precision NOT NULL,
-Mar double precision NOT NULL,
-April double precision NOT NULL,
-May double precision NOT NULL,
-June double precision NOT NULL,
-July double precision NOT NULL,
-Aug double precision NOT NULL,
-Sept double precision NOT NULL,
-Oct double precision NOT NULL,
-Nov double precision NOT NULL,
-Dec double precision NOT NULL,
+Jan int,
+Feb int,
+Mar int,
+April int,
+May int,
+June int,
+July int,
+Aug int,
+Sept int,
+Oct int,
+Nov int,
+Dec int,
 PRIMARY KEY(ID, CityId)
 );
 
 CREATE Table UV_index(
 ID serial NOT NULL,
 CityId int NOT NULL REFERENCES City(ID),
-Jan double precision NOT NULL,
-Feb double precision NOT NULL,
-Mar double precision NOT NULL,
-April double precision NOT NULL,
-May double precision NOT NULL,
-June double precision NOT NULL,
-July double precision NOT NULL,
-Aug double precision NOT NULL,
-Sept double precision NOT NULL,
-Oct double precision NOT NULL,
-Nov double precision NOT NULL,
-Dec double precision NOT NULL,
-PRIMARY KEY(ID, CityId)
-);
-
-CREATE Table Mountain_Dist(
-ID serial NOT NULL,
-CityId int NOT NULL REFERENCES City(ID),
-Dist int NOT NULL,
+Jan int,
+Feb int,
+Mar int,
+April int,
+May int,
+June int,
+July int,
+Aug int,
+Sept int,
+Oct int,
+Nov int,
+Dec int,
 PRIMARY KEY(ID, CityId)
 );
 
 CREATE Table Coastlines(
 ID serial NOT NULL,
 CityId int NOT NULL REFERENCES City(ID),
-NearCoast boolean NOT NULL,
+NearCoast boolean,
 PRIMARY KEY(ID, CityId)
 );
 
-CREATE Table Airport(
+CREATE Table Airports(
 ID serial NOT NULL,
 CityId int NOT NULL REFERENCES City(ID),
 Exists bool NOT NULL,
 PRIMARY KEY(ID, CityId)
 );
 
-CREATE Table Intl_Airport(
+CREATE Table Intl_Airports(
 ID serial NOT NULL,
 CityId int NOT NULL REFERENCES City(ID),
 Exists bool NOT NULL,
@@ -109,29 +102,24 @@ PRIMARY KEY(ID, CityId)
 CREATE Table Elevation(
 ID serial NOT NULL,
 CityId int NOT NULL REFERENCES City(ID),
-Dist int NOT NULL,
-PRIMARY KEY(ID, CityId)
-);
-
-CREATE Table Beach_Dist(
-ID serial NOT NULL,
-CityId int NOT NULL REFERENCES City(ID),
-Close Boolean,
+elevation int,
 PRIMARY KEY(ID, CityId)
 );
 
 CREATE Table Internet_Speed(
 ID serial NOT NULL,
-CityId int NOT NULL REFERENCES City(ID),
-Speed int NOT NULL,
-PRIMARY KEY(ID, CityId)
+Country int NOT NULL REFERENCES Country(ID),
+-- Speed is in Mbps
+Speed numeric,
+PRIMARY KEY(ID, Country)
 );
 
 CREATE Table Homicide(
 ID serial NOT NULL,
-CityId int NOT NULL REFERENCES City(ID),
-Rate int NOT NULL,
-PRIMARY KEY(ID, CityId)
+Country int NOT NULL REFERENCES Country(ID),
+TotalRate numeric,
+FemaleRate numeric,
+PRIMARY KEY(ID, Country)
 );
 
 CREATE Table Palm_Trees(
@@ -144,7 +132,7 @@ PRIMARY KEY(ID, CityId)
 CREATE Table City_Image(
 ID serial NOT NULL,
 CityId int NOT NULL REFERENCES City(ID),
-URL text NOT NULL,
+Src text NOT NULL,
 PRIMARY KEY(ID, CityId)
 );
 
@@ -162,15 +150,15 @@ PRIMARY KEY(ID, CityId, Biome_Id)
 
 CREATE Table Poverty_Index(
 ID serial NOT NULL,
-CityId int NOT NULL REFERENCES City(ID),
-Index double precision NOT NULL,
-PRIMARY KEY(ID, CityId)
+Country int NOT NULL REFERENCES Country(ID),
+percent double precision NOT NULL,
+PRIMARY KEY(ID, Country)
 );
 
 CREATE Table Air_Pollution(
 ID serial NOT NULL,
 CityId int NOT NULL REFERENCES City(ID),
-Index double precision NOT NULL,
+Index numeric,
 PRIMARY KEY(ID, CityId)
 );
 
@@ -200,5 +188,11 @@ Cost_Apt double precision NOT NULL,
 PRIMARY KEY(ID, CityId)
 );
 
+CREATE TABLE Puchasing_Power_Parity(
+ID serial NOT NULL,
+Country int NOT NULL REFERENCES Country(ID),
+ppp numeric,
+PRIMARY KEY(ID)
+);
 
 \i data/data.sql;
