@@ -1,10 +1,8 @@
 node {
    stage('Update') {
-      sh "pwd"
       src = '/var/www/voyager-index-database'
       sh "cd ${src}"
-      sh "pwd"
-      sh "git pull -Xtheirs origin master"
+      git url: 'https://github.com/voyager-index/database/'
    }
    stage('Export') {
       sh "psql -d map -f database.sql -f export-data.sql"
