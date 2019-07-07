@@ -1,3 +1,5 @@
+properties([pipelineTriggers([githubPush()])])
+
 node {
    stage('Update') {
       git url: 'https://github.com/voyager-index/database/'
