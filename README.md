@@ -1,3 +1,5 @@
+[![Build Status](https://liambeckman.com/jenkins/buildStatus/icon?job=voyager-index-database&style=flat-square)](https://liambeckman.com/jenkins/job/voyager-index-database/)
+
 A PostgreSQL powered database with quality of life data.
 
 # Quickstart
@@ -68,3 +70,9 @@ psql -d COOL_DATABASE
 - https://wiki.archlinux.org/index.php/PostgreSQL
 - https://devcenter.heroku.com/articles/heroku-postgresql#connecting-in-node-js
 
+# Building
+
+The database is updated everytime a push is made to the `master` branch. Build commands are defined in the [Jenkinsfile](./Jenkinsfile), and build results can be viewed at either of the following URL's.
+
+- [Jenkins (standard)](https://liambeckman.com/jenkins/job/voyager-index-database/)
+- [Jenkins (Blue Ocean)](https://liambeckman.com/jenkins/blue/organizations/jenkins/voyager-index-database/activity)
