@@ -76,3 +76,5 @@ The database is updated everytime a push is made to the `master` branch. Build c
 
 - [Jenkins (standard)](https://liambeckman.com/jenkins/job/voyager-index-database/)
 - [Jenkins (Blue Ocean)](https://liambeckman.com/jenkins/blue/organizations/jenkins/voyager-index-database/activity)
+
+![Build screenshot.](./build.png)
